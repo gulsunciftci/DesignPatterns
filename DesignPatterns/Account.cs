@@ -10,11 +10,11 @@ namespace DesignPatterns
     {
         private float balance;
 
-        //public void setBalance(float balance)
-        //{
-        //    if(balance>0)
-        //          this.balance = balance;
-        //}
+        public void setBalance(float balance)
+        {
+            if(balance>0)
+                this.balance = balance;
+        }
         public float getBalance()
         {
             return this.balance;

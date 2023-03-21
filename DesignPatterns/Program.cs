@@ -21,7 +21,10 @@ namespace DesignPatterns
             account.deposit(10);
             account.Withdraw(5);
             Console.WriteLine(account.getBalance());
-        
+
+            var mailService = new MailService();
+            mailService.sendEmail();
+
         }
         public static TaxCalculator getCalculator()
         {
