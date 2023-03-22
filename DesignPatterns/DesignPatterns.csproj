@@ -50,6 +50,8 @@
     <Compile Include="TaxCalculator.cs" />
     <Compile Include="TaxCalculator2019 .cs" />
     <Compile Include="TaxCalculator2020 .cs" />
+    <Compile Include="TextBox.cs" />
+    <Compile Include="UIControl.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesignPatterns.mementoo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,8 +29,16 @@ namespace DesignPatterns
             var textBox = new TextBox();
             textBox.enable();
 
-            drawUIControl(new TextBox());
+            drawUIControl(new checkBox());
+
+            var editor = new Editor();
+            editor.setContent ("a");
+            editor.setContent("b");
+            editor.setContent("c");
+            editor.undo();
+
         }
+
         public static TaxCalculator getCalculator()
         {
             return new TaxCalculator2019();

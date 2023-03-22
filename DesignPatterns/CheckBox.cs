@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns
 {
-    public class CheckBox : UIControl
+    public class checkBox : UIControl
     {
         public override void draw()
         {
-            Console.WriteLine("drawing a checkbow");
+            Console.WriteLine("drawing a checkbox");
         }
     }
 }
