@@ -32,11 +32,17 @@ namespace DesignPatterns
             drawUIControl(new checkBox());
 
             var editor = new Editor();
-            editor.setContent ("a");
-            editor.setContent("b");
-            editor.setContent("c");
-            editor.undo();
+            var history = new History();
 
+            editor.setContent ("a");
+            history.push(editor.createState());
+            editor.setContent("b");
+            history.push(editor.createState());
+            editor.setContent("c");
+            editor.restore(history.pop());
+            editor.restore(history.pop());
+
+            Console.WriteLine(editor.getContent());
         }
 
         public static TaxCalculator getCalculator()
