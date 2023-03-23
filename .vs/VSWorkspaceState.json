@@ -2,8 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\DesignPatterns",
-    "\\DesignPatterns\\mementoo"
+    "\\DesignPatterns\\mementoo",
+    "\\DesignPatterns\\state",
+    "\\DesignPatterns\\state\\abuse"
   ],
-  "SelectedNode": "\\DesignPatterns",
+  "SelectedNode": "\\DesignPatterns\\state\\abuse\\Stopwatch.cs",
   "PreviewInSolutionExplorer": false
 }

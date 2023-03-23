@@ -56,6 +56,16 @@
     <Compile Include="mementoo\History.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="state\abuse\RunningState.cs" />
+    <Compile Include="state\abuse\State.cs" />
+    <Compile Include="state\abuse\StoppedState.cs" />
+    <Compile Include="state\abuse\Stopwatch.cs" />
+    <Compile Include="state\BrushTool.cs" />
+    <Compile Include="state\Canvas.cs" />
+    <Compile Include="state\EraserTool.cs" />
+    <Compile Include="state\SelectionTool.cs" />
+    <Compile Include="state\Tool.cs" />
+    <Compile Include="state\ToolType.cs" />
     <Compile Include="TaxCalculator.cs" />
     <Compile Include="TaxCalculator2019 .cs" />
     <Compile Include="TaxCalculator2020 .cs" />

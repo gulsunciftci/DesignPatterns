@@ -1,6 +1,9 @@
 ﻿using DesignPatterns.mementoo;
+using DesignPatterns.state;
+using DesignPatterns.state.abuse;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,6 +46,18 @@ namespace DesignPatterns
             editor.restore(history.pop());
 
             Console.WriteLine(editor.getContent());
+
+            var canvas = new Canvas();
+            canvas.setCurrentTool(new EraserTool());
+            canvas.mouseDown();
+            canvas.mouseUp();
+
+            var stopwatch = new state.abuse.Stopwatch();
+            stopwatch.setCurrentState(new StoppedState(stopwatch));
+            stopwatch.click();
+            stopwatch.click();
+            stopwatch.click();
+            
         }
 
         public static TaxCalculator getCalculator()
